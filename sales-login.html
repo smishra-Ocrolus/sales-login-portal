@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ocrolus Sales Login Panel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ocrolus Sales Portal</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f0faff, #e4f0ff);
       font-family: 'Inter', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #eaf3fc url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Ocrolus_logo_transparent.png') no-repeat center;
+      background-size: 40%;
     }
+
     .container {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      padding: 30px 40px;
-      text-align: center;
+      background-color: #2c74d4;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
       max-width: 400px;
       width: 90%;
+      text-align: center;
+      color: white;
+      backdrop-filter: blur(10px);
     }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+
     h2 {
-      color: #0b3c5d;
-      margin-bottom: 24px;
+      font-size: 20px;
+      margin-bottom: 28px;
     }
+
     .login-btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      background-color: #0176d3;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      margin: 12px 0;
+      gap: 12px;
+      margin: 14px 0;
+      padding: 14px 20px;
       font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      background-color: #134d9f;
+      color: white;
       text-decoration: none;
       transition: all 0.3s ease;
     }
+
     .login-btn:hover {
-      background-color: #005fb2;
+      background-color: #103b7d;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
+
     .login-btn img {
       width: 20px;
       height: 20px;
@@ -54,20 +73,21 @@
 </head>
 <body>
   <div class="container">
+    <div class="logo">Ocrolus</div>
     <h2>Welcome to Ocrolus Sales Portal</h2>
 
-    <a class="login-btn" href="https://us-29990.app.gong.io/login" target="_blank">
-      <img src="https://img.icons8.com/color/48/gong.png" alt="Gong Logo">
+    <a class="login-btn" href="https://us-29990.app.gong.io/welcome/sign-in" target="_blank">
+      <img src="https://img.icons8.com/color/48/gong.png" alt="Gong Icon">
       Login to Gong
     </a>
 
-    <a class="login-btn" href="https://yourcompany.ironcladapp.com/login" target="_blank">
-      <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-ironclad-a-digital-contracting-platform-that-helps-legal-operations-logo-color-tal-revivo.png" alt="Ironclad Logo">
+    <a class="login-btn" href="https://ironcladapp.com/signin" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/parse-from-clipboard.png" alt="Ironclad Icon">
       Login to Ironclad
     </a>
 
     <a class="login-btn" href="https://login.outreach.io" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/rocket.png" alt="Outreach Logo">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/rocket.png" alt="Outreach Icon">
       Login to Outreach
     </a>
   </div>
