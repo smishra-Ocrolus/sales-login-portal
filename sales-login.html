@@ -11,14 +11,19 @@
       padding: 0;
       font-family: 'Inter', sans-serif;
       height: 100vh;
-      background-color: #eaf3fc;
-      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNF...');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .background-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.15;
+      z-index: 0;
     }
 
     .container {
@@ -29,6 +34,11 @@
       max-width: 400px;
       width: 90%;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      position: relative;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     .container h1 {
@@ -71,16 +81,18 @@
   </style>
 </head>
 <body>
+  <img class="background-img" src="https://raw.githubusercontent.com/smishra-Ocrolus/sales-login-portal/main/Ocrolus_Background_Optimized.jpg" alt="Background" />
+
   <div class="container">
     <h1>Ocrolus</h1>
     <p>Welcome to Ocrolus Sales Portal</p>
 
-    <a class="login-btn" href="https://us-29990.app.gong.io/welcome/sign-in" target="_blank">
+    <a class="login-btn" href="https://us-29990.app.gong.io/login" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Gong Icon">
       Login to Gong
     </a>
 
-    <a class="login-btn" href="https://ironcladapp.com/signin" target="_blank">
+    <a class="login-btn" href="https://yourcompany.ironcladapp.com/login" target="_blank">
       <img src="https://img.icons8.com/ios-filled/50/ffffff/parse-from-clipboard.png" alt="Ironclad Icon">
       Login to Ironclad
     </a>
